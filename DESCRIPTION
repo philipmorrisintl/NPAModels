@@ -1,0 +1,43 @@
+Package: NPAModels
+Title: Contains utils for loading and manipulating two-layers structure
+    network models
+Version: 0.99.0
+Depends:
+    R (>= 3.4.3),
+    R6
+Author: Florian Martin <Florian.Martin@pmi.com>, Sylvain Gubian
+    <Sylvain.Gubian@pmi.com>, Marja Talikka <Marja.Talikka@pmi.com>,
+    Justyna Szostak<Justyna.Szostak@pmi.com>
+Maintainer: Sylvain Gubian <DL.RSupport@pmi.com>
+Description: Networks data and Suite of tools to load biological networks.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-11 19:10:40 UTC; sgubian
+Collate:
+    'Hs__CFA__Apoptosis__0__0__1.R'
+    'Hs__CPR__Cell_Cycle__0__0__1.R'
+    'Hs__CST__Oxydative_Stress__0__0__1.R'
+    'Hs__CST__Xenobiotic_Metabolism_Response__0__0__1.R'
+    'Hs__IPN__Epithelial_Innate_Immune_Activation__0__0__1.R'
+    'Hs__IPN__Neutrophil_Signaling__0__0__1.R'
+    'Hs__TRA__ECM_Degradation__0__0__1.R'
+    'Mm__CFA__Apoptosis__0__0__1.R'
+    'Mm__CPR__Cell_Cycle__0__0__1.R'
+    'Mm__CST__Oxydative_Stress__0__0__1.R'
+    'Mm__CST__Xenobiotic_Metabolism_Response__0__0__1.R'
+    'Mm__IPN__Epithelial_Innate_Immune_Activation__0__0__1.R'
+    'Mm__IPN__Neutrophil_Signaling__0__0__1.R'
+    'Mm__TRA__ECM_Degradation__0__0__1.R'
+    'NPAModel.R'
+    'getLQ.R'
+    'utils.R'
+    'load_model.R'
+    'minimizeNetwork.R'
+    'preprocessNetwork.R'
+    'zzz.R'
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
