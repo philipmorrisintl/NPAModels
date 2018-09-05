@@ -13,7 +13,7 @@ They are available for the species under consideration:
 Networks are classified into families that describes general biological
 processes such as:
 
-- CPR: Cell Proliferation
+- **CPR**: Cell Proliferation
 
 - **CST**: Cell Stress
 
