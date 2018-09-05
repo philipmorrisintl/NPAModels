@@ -23,7 +23,7 @@ processes such as:
 
 - **TRA**: Tissue Repair and Angiogenesis
 
-# Preprocessing networks
+## Preprocessing networks
 
 After package installation, networks are installed with no precomputed data.
 To make them ready to be scored using the `NPA` algorithm provided with the
