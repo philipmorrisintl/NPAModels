@@ -3,7 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' Reduces the slots of a netowk object to the minimum
+#' Reduces the slots of a network object to the minimum
 #' required slots for getLQ function to be applied
 #' @param model List with few slots to be cleanded
 #' @return Same object with some slots removed
