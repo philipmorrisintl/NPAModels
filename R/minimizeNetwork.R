@@ -12,7 +12,8 @@ minimizeNetwork <- function(model) {
     # First level of list content
     slots_to_keep  <- c(
                         "model",
-                        "startNodeDown"
+                        "startNodeDown",
+                        "g"
                         )
     for(slot_ in names(model)) {
         if (!slot_ %in% slots_to_keep) {
@@ -20,6 +21,7 @@ minimizeNetwork <- function(model) {
         }
     }
     # Second level of data to keep in model
+    # Keeping edges data.frame
     for (slot_ in names(model$model)) {
         if (slot_ != "edges") {
             model$model[[slot_]] <- NULL

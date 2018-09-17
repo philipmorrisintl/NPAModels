@@ -3,7 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' ECM Degradation network for Homo sapiens
+#' ECM Degradation network for Homo sapiens (version 0.0.1)
 #'
 #' @name Hs__TRA__ECM_Degradation__0__0__1.rda
 #' @docType data

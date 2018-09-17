@@ -13,6 +13,7 @@
 #' downstrean genes
 #' @return A R list object with computed metric like L2, L3 matrices,
 #' Qbackbone, ...
+#' @export
 
 getLQ <- function(Model, verbose = TRUE, pattern.gene = "^EXP\\(") {
     # model$edges

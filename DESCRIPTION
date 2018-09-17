@@ -16,9 +16,10 @@ LazyData: false
 RoxygenNote: 6.0.1
 NeedsCompilation: no
 Packaged: 2018-04-11 19:10:40 UTC; sgubian
-Collate:
+Collate: 
     'Hs__CFA__Apoptosis__0__0__1.R'
     'Hs__CPR__Cell_Cycle__0__0__1.R'
+    'Hs__CPR__Jak_Stat__0__0__1.R'
     'Hs__CST__Oxydative_Stress__0__0__1.R'
     'Hs__CST__Xenobiotic_Metabolism_Response__0__0__1.R'
     'Hs__IPN__Epithelial_Innate_Immune_Activation__0__0__1.R'
@@ -26,6 +27,7 @@ Collate:
     'Hs__TRA__ECM_Degradation__0__0__1.R'
     'Mm__CFA__Apoptosis__0__0__1.R'
     'Mm__CPR__Cell_Cycle__0__0__1.R'
+    'Mm__CPR__Jak_Stat__0__0__1.R'
     'Mm__CST__Oxydative_Stress__0__0__1.R'
     'Mm__CST__Xenobiotic_Metabolism_Response__0__0__1.R'
     'Mm__IPN__Epithelial_Innate_Immune_Activation__0__0__1.R'

@@ -3,7 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' Apoptosis Network for Mus musculus
+#' Apoptosis Network for Mus musculus (version 0.0.1)
 #'
 #' @name Mm__CFA__Apoptosis__0__0__1.rda
 #' @docType data

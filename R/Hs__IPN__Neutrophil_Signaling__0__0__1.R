@@ -3,7 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' Neutrophil Signaling network for Homo sapiens
+#' Neutrophil Signaling network for Homo sapiens (version 0.0.1)
 #'
 #' @name Hs__IPN__Neutrophil_Signaling__0__0__1.rda
 #' @docType data

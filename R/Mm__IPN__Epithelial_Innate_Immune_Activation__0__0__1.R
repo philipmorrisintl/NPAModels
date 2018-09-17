@@ -3,7 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' Epithelial Innate Immune Activation network for Mus musculus
+#' Epithelial Innate Immune Activation network for Mus musculus (version 0.0.1)
 #'
 #' @name Mm__IPN__Epithelial_Innate_Immune_Activation__0__0__1.rda
 #' @docType data
