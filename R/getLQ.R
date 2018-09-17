@@ -176,5 +176,6 @@ getLQ <- function(Model, verbose = TRUE, pattern.gene = "^EXP\\(") {
                 sgn = Ebackbone[, 3],
                 NetSize = NetSize,
                 backbone = Ebackbone[, c(1, 3, 2)],
-                startNodeDown = Model$startNodeDown))
+                startNodeDown = Model$startNodeDown,
+                g = Model$g))
 }
