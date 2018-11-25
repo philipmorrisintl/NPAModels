@@ -9,6 +9,10 @@
 #' @include getLQ.R
 #' @include minimizeNetwork.R
 #' @export
+#' @return A NULL value.
+#' @examples 
+#' ## This example processes the package models to make them minimal
+#' preprocessNetworks(minimize = TRUE, lq = FALSE)
 preprocessNetworks <- function(minimize = FALSE, lq = TRUE) {
     folder <- path.package("NPAModels")
     datalist_fp <- file.path(folder, 'data', 'datalist')
@@ -46,4 +50,5 @@ preprocessNetworks <- function(minimize = FALSE, lq = TRUE) {
         write(new_computed, file=precomputed_fp, append=TRUE)
     }
     message("All networks are ready to be scored.")
+    return(NULL)
 }

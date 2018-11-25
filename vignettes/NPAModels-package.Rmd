@@ -56,7 +56,8 @@ processes such as:
 After package installation, networks are installed with no precomputed data.
 To make them ready to be scored using the `NPA` algorithm provided with the
 `NPA package`, it is recommanded to run `preprocessNetworks()` function from
-the `NPAModels` package. This will prepare networks for fast scoring computation.
+the `NPAModels` package. This will prepare networks for fast scoring
+computation.
 
 # Cell Stress network family
 

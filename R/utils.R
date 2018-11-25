@@ -10,6 +10,8 @@
 #'
 #' @return Vector of strings, list of data files without extension
 #' @export
+#' @examples
+#' l <- list_data()
 #'
 list_data <- function(pattern='*.rda') {
   data_path <- system.file('data', package='NPAModels')
@@ -22,9 +24,11 @@ list_data <- function(pattern='*.rda') {
 #' @param species A string, species name. Default is `Hs` for Homo sapiens
 #'
 #' @return Vector of strings, the list of families
+#' @examples
+#' f <- list_families(species = "Mm")
 #' @export
 #'
-list_families <- function(species='Hs') {
+list_families <- function(species = 'Hs') {
   l <- list_data(pattern=paste0(species, '__'))
   splitted <- strsplit(l, '__')
   families <- unlist(lapply(splitted, function(x) x[2]))
@@ -38,6 +42,8 @@ list_families <- function(species='Hs') {
 #' are listed.
 #'
 #' @return Vector of strings, the list of model names
+#' @examples
+#' f <- list_models(species = "Mm", family = "CPR")
 #' @export
 #'
 list_models <- function(species='Hs', family=NULL) {

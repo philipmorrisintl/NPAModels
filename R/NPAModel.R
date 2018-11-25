@@ -7,8 +7,8 @@
 #'
 #' @docType class
 #' @importFrom R6 R6Class
-#' @export
-#' @return Object of \code{\link{R6Class}} named NPAModel containing network model
+#' @return Object of \code{\link{R6Class}} named NPAModel containing
+#' network model
 #' @format \code{\link{R6Class}} object.
 #' @field data A R list object containing model data
 #' @field species A string, species name

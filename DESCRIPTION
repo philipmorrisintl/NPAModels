@@ -3,8 +3,9 @@ Title: Contains utils for loading and manipulating two-layers structure
     network models
 Version: 0.99.0
 Depends:
-    R (>= 3.4.3),
+    R (>= 3.5),
     R6
+Imports: methods, tools
 Author: Florian Martin <Florian.Martin@pmi.com>, Sylvain Gubian
     <Sylvain.Gubian@pmi.com>, Marja Talikka <Marja.Talikka@pmi.com>,
     Justyna Szostak<Justyna.Szostak@pmi.com>
@@ -13,8 +14,9 @@ Description: Networks data and Suite of tools to load biological networks.
 License: file LICENSE
 Encoding: UTF-8
 LazyData: false
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 NeedsCompilation: no
+biocViews: Network, GraphAndNetwork, MathematicalBiology, SystemsBiology, GeneExpression
 Packaged: 2018-04-11 19:10:40 UTC; sgubian
 Collate: 
     'Hs__CFA__Apoptosis__0__0__1.R'
