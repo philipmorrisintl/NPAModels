@@ -171,7 +171,7 @@ getLQ <- function(Model, verbose = TRUE, pattern.gene = "^EXP\\(") {
     QbL3inv.perm <- lapply(1:b, function(i) {
         l3 <- permL3(L3, seed = i + 858)
         ql3inv <- try(-Qb.sqrt %*% solve(l3), silent = TRUE)
-        if (is(class(ql3inv), "try-error")) {
+        if (inherits(ql3inv, "try-error")) {
             ql3inv <- matrix(NA, nrow(L3), ncol(L3))
         }
         return(ql3inv)
