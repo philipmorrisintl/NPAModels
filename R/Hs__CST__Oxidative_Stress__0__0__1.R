@@ -3,9 +3,9 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
-#' Oxydative Stress network for Homo sapiens (version 0.0.1)
+#' Oxidative Stress network for Homo sapiens (version 0.0.1)
 #'
-#' @name Hs__CST__Oxydative_Stress__0__0__1.rda
+#' @name Hs__CST__Oxidative_Stress__0__0__1.rda
 #' @docType data
 #' @keywords data
 NULL
