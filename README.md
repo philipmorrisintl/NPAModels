@@ -19,7 +19,7 @@ processes such as:
 
 - **CFA**: Cell Fate
 
-- **IPN**: Inflmamatory Process
+- **IPN**: Inflammatory Process
 
 - **TRA**: Tissue Repair and Angiogenesis
 
