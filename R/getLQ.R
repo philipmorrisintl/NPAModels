@@ -16,7 +16,7 @@
 #' @importFrom methods is
 #' @export
 #' @examples
-#' data(Hs__CFA__Apoptosis__0__0__1) 
+#' data(Hs__CFA__Apoptosis__0__0__1)
 #' # Hs__CFA__Apoptosis__0__0__1 <- getLQ(
 #' #    Hs__CFA__Apoptosis__0__0__1, verbose = TRUE)
 
@@ -128,7 +128,7 @@ getLQ <- function(Model, verbose = TRUE, pattern.gene = "^EXP\\(") {
     # Get key matrices
     L2 <- L[downgene, -downgene]
     L3 <- L[-downgene, -downgene]
-    L3inv <- try(solve(L3))
+    L3inv <- try(solve(L3), silent=TRUE)
     if (is(class(L3inv), "try-error")) {
         svL3 <- svd(L3)
         lambdainv <- rep(0, length(svL3$d))
