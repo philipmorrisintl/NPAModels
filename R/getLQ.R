@@ -129,7 +129,7 @@ getLQ <- function(Model, verbose = TRUE, pattern.gene = "^EXP\\(") {
     L2 <- L[downgene, -downgene]
     L3 <- L[-downgene, -downgene]
     L3inv <- try(solve(L3), silent=TRUE)
-    if (is(class(L3inv), "try-error")) {
+    if (inherits(L3inv, "try-error")) {
         svL3 <- svd(L3)
         lambdainv <- rep(0, length(svL3$d))
         lambdainv[abs(svL3$d) > 1e-13] <- 1/svL3$d[abs(svL3$d) > 1e-13]
