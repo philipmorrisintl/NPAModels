@@ -42,6 +42,7 @@ Collate:
     'minimizeNetwork.R'
     'preprocessNetwork.R'
     'zzz.R'
+    'export.R'
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
