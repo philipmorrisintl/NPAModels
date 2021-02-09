@@ -33,8 +33,46 @@ exportDownstreams <- function(net, output_path=file.path(getwd(), 'downstream.ts
     for (inode_idx in seq_along(net$startNodeDown)) {
         current_df <- net$startNodeDown[[inode_idx]]
         parent_node <- rep(names(net$startNodeDown[inode_idx]), nrow(current_df))
-        current_df$InodeLabel <- parent_node
+        current_df$inodeLabel <- parent_node
+        current_df$nodeLabel <- delexp(current_df$nodeLabel)
         df <- rbind(df, current_df)
     }
+    colnames(df) <- c('NodeLabel', 'Direction', 'INodeLabel')
     write.table(df, file=output_path, quote=FALSE, sep='\t', row.names=FALSE)
+}
+
+
+
+#' Utility function to remove EXP() for transcripts in downstreams dataframes
+#'
+#' @param net A string of vector of strings to be processed
+#' @return A string or vector of strings processed.
+delexp <- function(x) {
+    x <- gsub(
+        "^EXP\\(",
+        "",
+        gsub(
+            "^exp\\(",
+            "",
+            gsub(
+                "\\)$", "", as.character(x), perl=TRUE
+            ),
+            perl=TRUE
+        ),
+        perl=TRUE
+    )
+    x <- gsub(
+        "^R\\(",
+        "",
+        gsub(
+            "^r\\(",
+            "",
+            gsub(
+                "\\)$", "", as.character(x), perl=TRUE
+            ),
+            perl=TRUE
+        ),
+        perl=TRUE
+    )
+    return(x)
 }
