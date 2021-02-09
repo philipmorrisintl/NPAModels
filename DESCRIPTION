@@ -36,13 +36,13 @@ Collate:
     'Mm__IPN__Neutrophil_Signaling__0__0__1.R'
     'Mm__TRA__ECM_Degradation__0__0__1.R'
     'NPAModel.R'
+    'export.R'
     'getLQ.R'
     'utils.R'
     'load_model.R'
     'minimizeNetwork.R'
     'preprocessNetwork.R'
     'zzz.R'
-    'export.R'
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr

@@ -24,7 +24,7 @@ Qbackbone, ...
 Get precomputed matrix for fast NPA computations
 }
 \examples{
-data(Hs__CFA__Apoptosis__0__0__1) 
+data(Hs__CFA__Apoptosis__0__0__1)
 # Hs__CFA__Apoptosis__0__0__1 <- getLQ(
 #    Hs__CFA__Apoptosis__0__0__1, verbose = TRUE)
 }
