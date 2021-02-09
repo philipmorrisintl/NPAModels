@@ -1,7 +1,7 @@
 Package: NPAModels
 Title: Contains utils for loading and manipulating two-layers structure
     network models
-Version: 0.99.3
+Version: 0.99.4
 Depends:
     R (>= 3.5),
     R6

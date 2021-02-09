@@ -3,5 +3,7 @@
 ## Quai Jeanrenaud 5, 2000 Neuchatel, Switzerland
 #####################################################################
 
+0.99.4 Sylvain Gubian  <DL.RSupport@pmi.com>
+    * Added exporting features in tsv format
 0.99.0 Sylvain Gubian  <DL.RSupport@pmi.com>
     *Initial Bioconductor version of the NPAModels package
