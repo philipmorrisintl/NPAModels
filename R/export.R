@@ -14,8 +14,8 @@
 exportBackbone <- function(net, output_path=file.path(getwd(), 'backbone.tsv')) {
     net <- net$get_data()
     edges <- net$model$edges
-    df <- data.frame(SourceNode=edges$Source.Node, Direction=edges$Direction,
-                     TargetNode=edges$Target.Node)
+    df <- data.frame(subject=edges$Source.Node, object=edges$Target.Node,
+                     relation=edges$Direction)
     write.table(df, file=output_path, quote=FALSE, sep='\t', row.names=FALSE)
 }
 
@@ -31,13 +31,15 @@ exportDownstreams <- function(net, output_path=file.path(getwd(), 'downstream.ts
     net <- net$get_data()
     df <- data.frame()
     for (inode_idx in seq_along(net$startNodeDown)) {
-        current_df <- net$startNodeDown[[inode_idx]]
-        parent_node <- rep(names(net$startNodeDown[inode_idx]), nrow(current_df))
-        current_df$inodeLabel <- parent_node
-        current_df$nodeLabel <- delexp(current_df$nodeLabel)
+        parent_node <- rep(names(net$startNodeDown[inode_idx]),
+                           nrow(net$startNodeDown[[inode_idx]]))
+        current_df <- data.frame(
+            subject = parent_node,
+            object = delexp(net$startNodeDown[[inode_idx]]$nodeLabel),
+            relation = net$startNodeDown[[inode_idx]]$Direction
+        )
         df <- rbind(df, current_df)
     }
-    colnames(df) <- c('NodeLabel', 'Direction', 'INodeLabel')
     write.table(df, file=output_path, quote=FALSE, sep='\t', row.names=FALSE)
 }
 
